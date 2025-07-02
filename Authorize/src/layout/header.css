@@ -1,0 +1,22 @@
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.logo .logo-image {
+  position: relative;
+  width: 90;
+  height: 66;
+  top: 23px;
+  left: 120px;
+}
+.header-search-bar-wrapper {
+  position: relative;
+  left: -120px;
+}
