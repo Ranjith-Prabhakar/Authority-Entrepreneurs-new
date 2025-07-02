@@ -1,0 +1,20 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #00000099;
+}
+.navbar-wrapper li {
+  list-style: none;
+}
+
+.navbar-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}

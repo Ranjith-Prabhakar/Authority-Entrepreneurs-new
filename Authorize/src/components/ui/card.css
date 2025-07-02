@@ -1,0 +1,104 @@
+.card {
+  flex: 0 0 32%;
+  max-width: 32%;
+
+  width: 276px;
+  height: 431px;
+  border-radius: 16px;
+  border-width: 1px;
+
+  background-color: #f7f5f7;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  padding: 5px;
+  width: 100%;
+  height: 290px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-position: center;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.card-content {
+  width: 247px;
+  height: 133px;
+  top: 284px;
+  left: 11px;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #667085;
+  background: transparent;
+}
+.card-description {
+  width: 246px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #7b7f86;
+  background: transparent;
+  overflow: hidden;
+}
+.card-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 87px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #344054;
+  background: transparent;
+}
+.rating-review {
+  background: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+}
+.rating-review h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #98a2b3;
+  background: transparent;
+}
+
+.wishlist-icon-wrapper {
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfd;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  overflow: hidden;
+}
+
+.wishlist-icon {
+  transform: scale(1.5);
+  font-weight: 700;
+  font-size: 20px;
+}

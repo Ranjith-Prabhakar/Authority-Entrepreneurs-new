@@ -1,0 +1,41 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  height: 33px;
+  border-radius: 4px;
+  overflow: hidden;
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+}
+.pagination-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-right: 1px solid #d1d5db;
+  border-left: 1px solid #d1d5db;
+  border-radius: 4px;
+  height: 100%;
+}
+.pagination-nums-tab-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.pagination-nums-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 15px;
+  padding: 8px;
+  border-right: 1px solid #d1d5db;
+  border-left: 1px solid #d1d5db;
+}
+.pagination .active {
+  background-color: #e1effe;
+}
