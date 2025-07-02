@@ -1,0 +1,35 @@
+.home-page-main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.home-page-content-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.home-page-content-wrapper-left-section {
+  width: 276px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 10px;
+}
+.home-page-content-wrapper-right-section {
+  flex-grow: 1;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.pagination-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
