@@ -1,0 +1,23 @@
+.category-search-bar {
+  position: relative;
+  top: 5px;
+}
+.category-search-bar input {
+  width: 239px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 2px 30px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  font-family: Poppins;
+  color: #000000;
+}
+.category-search-bar-icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}

@@ -1,0 +1,30 @@
+.fiter-bar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: transparent; */
+  background-color: #f9f9f9;
+
+  width: 100%;
+  color: #000000;
+  padding: 10px;
+}
+
+.fiter-bar-head .filter-bar-head-1 {
+  width: 39px;
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  background: transparent;
+}
+.fiter-bar-head .filter-bar-head-2 {
+  width: 82px;
+  height: 19px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  background: transparent;
+}

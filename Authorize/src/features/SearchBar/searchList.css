@@ -1,0 +1,11 @@
+.search-list-item {
+  font-size: 16px;
+  max-width: 500px;
+  padding: 7px;
+}
+.search-list-item p {
+  transition: all 1s ease-in-out;
+}
+.search-list-item p:hover {
+  transform: scale(1.1);
+}

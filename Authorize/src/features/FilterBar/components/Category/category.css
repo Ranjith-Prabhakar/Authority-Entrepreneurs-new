@@ -1,0 +1,14 @@
+.filter-category-wrapper {
+  width: 257px;
+  height: 215px;
+  border-radius: 16px;
+  overflow: scroll;
+  padding: 15px 10px;
+  background-color: #ffffff;
+}
+.category-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 10px;
+}

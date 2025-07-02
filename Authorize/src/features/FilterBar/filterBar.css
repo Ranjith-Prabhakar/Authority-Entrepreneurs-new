@@ -1,0 +1,13 @@
+.filter-bar-wrapper {
+  background-color: #f9f9f9;
+  width: 276px;
+  border-radius: 16px;
+  padding: 10px;
+}
+.category-price-rating-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  border-radius: 10px;
+}
