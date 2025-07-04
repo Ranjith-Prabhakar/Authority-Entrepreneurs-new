@@ -25,7 +25,20 @@
   gap: 20px;
   padding-top: 30px;
 }
+.card {
+  flex: 0 0 32%;
+  max-width: 32%;
 
+  width: 276px;
+  height: 431px;
+  border-radius: 16px;
+  border-width: 1px;
+
+  background-color: #f7f5f7;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
 .pagination-wrapper {
   width: 100%;
   display: flex;

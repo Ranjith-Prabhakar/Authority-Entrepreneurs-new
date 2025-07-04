@@ -1,16 +1,18 @@
 /* eslint-disable react-refresh/only-export-components */
-import Card from "../components/ui/Card";
-import FilterBar from "../features/FilterBar";
-import Hero from "../features/Hero";
-import ProductNavigation from "../features/ProductNavigationBar";
-import { useGetProducts } from "../hooks/getProducts";
+import Card from "../../components/ui/Card";
+import FilterBar from "../../features/FilterBar";
+import Hero from "../../features/Hero";
+import ProductNavigation from "../../features/ProductNavigationBar";
+import { useGetProducts } from "../../hooks/getProducts";
 import "./homePage.css";
-import SortBar from "../features/SortBar";
-import Pagination from "../components/ui/Pagination";
-import { useSetPagination } from "../hooks/setPagination";
+import SortBar from "../../features/SortBar";
+import Pagination from "../../components/ui/Pagination";
+import { useSetPagination } from "../../hooks/setPagination";
+import { useProductPageNavigation } from "../../hooks/setProductPageNavigation";
 export default function () {
   let products = useGetProducts();
   let [paginationHandler, totalPage, currentTab] = useSetPagination();
+  const productPageNavigationHandler = useProductPageNavigation();
   return (
     <>
       <Hero />
@@ -29,14 +31,20 @@ export default function () {
             <div className="card-wrapper">
               {products ? (
                 products.map((product) => (
-                  <Card
+                  <div
                     key={product.title}
-                    image={product.image}
-                    title={product.category}
-                    description={product.description}
-                    price={product.price}
-                    rating={product.rating}
-                  />
+                    className="card"
+                    onClick={() => productPageNavigationHandler(product)}
+                  >
+                    <Card
+                      id={product.id}
+                      image={product.image}
+                      title={product.category}
+                      description={product.description}
+                      price={product.price}
+                      rating={product.rating}
+                    />
+                  </div>
                 ))
               ) : (
                 <h1>No Products Found For This Query!..</h1>

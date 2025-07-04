@@ -4,7 +4,8 @@ import RupeeIcon from "./RupeeIcon";
 import { CiHeart } from "react-icons/ci";
 export default function Card({ image, title, description, price, rating }) {
   return (
-    <div className="card">
+    // <div className="card">
+    <div>
       <img className="card-image" src={image} alt="" />
       <div className="card-content">
         <h5 className="card-title">{title}</h5>

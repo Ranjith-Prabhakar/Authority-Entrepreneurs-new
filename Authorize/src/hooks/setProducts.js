@@ -8,7 +8,7 @@ import {
 } from "../store/slices/productSlice";
 import { getProducts } from "../services/products";
 // import dummy from "../assets/dummy.json";
-export default function useProductSetter() {
+export default function useProductsSetter() {
   const dispatch = useDispatch();
 
   useEffect(() => {

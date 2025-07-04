@@ -9,6 +9,7 @@ const initialState = {
   currentTab: 1,
   currentPageProducts: [],
   category: [],
+  selectedProduct: {},
 };
 function currentPageProducts(state) {
   let { allProducts, filter, sort } = state;
@@ -74,6 +75,9 @@ export const productSlice = createSlice({
       state.currentPageProducts = newcurrentPageProducts;
       state.currentTab = action.payload.tabNo;
     },
+    updateSelectedProduct: (state, action) => {
+      state.selectedProduct = action.payload;
+    },
   },
 });
 
@@ -84,5 +88,6 @@ export const {
   setCategory,
   updateSort,
   updateFilter,
+  updateSelectedProduct,
 } = productSlice.actions;
 export default productSlice.reducer;

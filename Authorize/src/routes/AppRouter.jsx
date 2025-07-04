@@ -4,11 +4,12 @@ import { Suspense } from "react";
 import AppLayout from "../layout/AppLayout";
 import { Toaster } from "react-hot-toast";
 import HomePage from "../pages/HomePage";
-import useProductSetter from "../hooks/productSetter";
+import useProductsSetter from "../hooks/setProducts";
 import ProductPage from "../pages/ProductPage";
+import ProductPageLayout from "../layout/ProductPageLayout";
 
 export default function () {
-  useProductSetter();
+  useProductsSetter();
   return (
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
@@ -16,9 +17,11 @@ export default function () {
           <Route element={<AppLayout />}>
             <Route path="/" element={<HomePage />} />
           </Route>
-          <Route path="/product:id" element={<ProductPage />}></Route>
+          <Route element={<ProductPageLayout />}>
+            <Route path="/product/:id" element={<ProductPage />} />
+          </Route>
         </Routes>
-        {/* <Toaster
+        <Toaster
           position="top-right"
           toastOptions={{
             duration: 3000,
@@ -27,7 +30,7 @@ export default function () {
               color: "#fff",
             },
           }}
-        /> */}
+        />
       </Suspense>
     </BrowserRouter>
   );

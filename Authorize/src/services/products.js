@@ -8,3 +8,12 @@ export const getProducts = async () => {
     console.error(error);
   }
 };
+
+export const getSingleProduct = async (id) => {
+  try {
+    const product = await axios.get(`/products/${id}`);
+    return product.data;
+  } catch (error) {
+    console.error(error);
+  }
+};

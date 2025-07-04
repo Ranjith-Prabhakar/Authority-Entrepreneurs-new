@@ -1,0 +1,24 @@
+.discount-bar {
+  background-color: #141414;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 10px;
+}
+.discount-bar h5 {
+  color: #ffffff;
+  height: 17px;
+  opacity: 1;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 120%;
+}
+.discount-bar .timer {
+  background-color: #383838;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+}
