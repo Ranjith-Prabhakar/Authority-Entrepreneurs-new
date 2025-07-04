@@ -1,4 +1,4 @@
-import "./card.css";
+import "./cardGeneral.css";
 import Rating from "./Rating";
 import RupeeIcon from "./RupeeIcon";
 import { CiHeart } from "react-icons/ci";

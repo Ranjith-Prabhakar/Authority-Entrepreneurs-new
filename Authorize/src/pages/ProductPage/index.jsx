@@ -2,7 +2,8 @@ import NavigationTracker from "../../components/ui/NavigationTracker";
 import useProductSetter from "../../hooks/setProduct";
 import ProductDetails from "../../features/ProductDetails";
 import { useParams } from "react-router-dom";
-
+import SeperatorLine from "../../components/ui/SeperatorLine";
+import RelatedProducts from "../../features/RelatedProducts";
 export default function () {
   const { id } = useParams();
   console.log("inside useProductSetter ", id);
@@ -11,7 +12,8 @@ export default function () {
     <div className="profile-page-wrapper">
       <NavigationTracker />
       <ProductDetails />
-      {/* <RelatedProducts /> */}
+      <SeperatorLine />
+      <RelatedProducts />
       {/* <ProductReview /> */}
       {/* <PopularThisWeek /> */}
     </div>

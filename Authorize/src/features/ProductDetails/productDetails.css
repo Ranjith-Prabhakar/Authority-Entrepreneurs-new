@@ -3,10 +3,8 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  /* background-color: yellowgreen; */
   padding: 10px;
-  height: 800px;
-  /* gap: 40px; */
+  height: 720px;
 }
 .product-page-image-section {
   max-width: 45%;

@@ -1,0 +1,35 @@
+.related-products-wrapper {
+  margin-top: 100px;
+}
+.related-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 34px;
+}
+.related-products-header h3 {
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 28px;
+  line-height: 120%;
+  color: #141414;
+}
+.related-products-header .Link {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: right;
+  vertical-align: bottom;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  color: #525252;
+}
+.related-products-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 60px;
+}

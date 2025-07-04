@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import Card from "../../components/ui/Card";
+import Card from "../../components/ui/CardGeneral";
 import FilterBar from "../../features/FilterBar";
 import Hero from "../../features/Hero";
 import ProductNavigation from "../../features/ProductNavigationBar";
