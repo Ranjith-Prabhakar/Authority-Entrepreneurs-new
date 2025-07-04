@@ -76,7 +76,7 @@ export const productSlice = createSlice({
       state.currentTab = action.payload.tabNo;
     },
     updateSelectedProduct: (state, action) => {
-      state.selectedProduct = action.payload;
+      state.selectedProduct = action.payload ?? {};
     },
   },
 });

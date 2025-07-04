@@ -5,7 +5,7 @@ import ProductFooter from "./ProductFooter";
 import "./productPageLayout.css";
 export default function () {
   return (
-    <div>
+    <div className="product-page-layout-wrapper">
       <DiscountBar />
       <div className="product-page-layout">
         <ProductHeader />

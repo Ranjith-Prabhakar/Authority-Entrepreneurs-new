@@ -14,11 +14,7 @@ export default function () {
     <div className="selected-product-wrapper">
       <div className="selected-product-wrapper-top">
         <div className="selected-product-logo">
-          <img
-            src={product.brand ? product.brand : productBrandImg}
-            alt=""
-            srcset=""
-          />
+          <img src={product.brand ? product.brand : productBrandImg} alt="" />
         </div>
         <div className="selected-product-navigation-flex">
           <IoIosSearch />
@@ -31,11 +27,11 @@ export default function () {
             <h5>Sign in</h5>
           </div>
           <CiHeart />
-          <img src={cart} alt="" srcset="" />
+          <img src={cart} alt="" />
         </div>
       </div>
       <div className="selected-product-wrapper-bottom">
-        <img src={strightLine} alt="" srcset="" />
+        <img src={strightLine} alt="" />
       </div>
     </div>
   );

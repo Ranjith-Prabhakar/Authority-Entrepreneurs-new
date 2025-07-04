@@ -1,7 +1,6 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import "./pagination.css";
-import { useState } from "react";
 export default function Pagination({
   paginationHandler,
   buttonCount,

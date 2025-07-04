@@ -6,6 +6,8 @@ export default function useProductSetter(id) {
   const dispatch = useDispatch();
 
   useEffect(() => {
+    if (!id) return;
+
     const fetchProduct = async () => {
       try {
         const data = await getSingleProduct(id);
@@ -17,5 +19,5 @@ export default function useProductSetter(id) {
     };
 
     fetchProduct();
-  }, [dispatch]);
+  }, [id, dispatch]);
 }
