@@ -1,6 +1,5 @@
 import { useGetProduct } from "../../hooks/getProduct";
 import productBrandImg from "../../assets/product-brand.png";
-import cart from "../../assets/cart.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";

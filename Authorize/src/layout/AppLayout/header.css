@@ -12,11 +12,35 @@ header {
   justify-content: center;
   align-items: center;
 }
-.logo .logo-image {
-  width: 90;
-  height: 66;
+.logo img {
+  width: 90px;
+  height: 66px;
 }
 .header-search-bar-wrapper {
   position: relative;
   left: -120px;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .header-search-bar-wrapper {
+    display: none;
+  }
 }

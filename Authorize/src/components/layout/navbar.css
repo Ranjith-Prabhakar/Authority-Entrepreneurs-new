@@ -19,3 +19,19 @@
   justify-content: space-between;
   gap: 8px;
 }
+
+.navbar-wrapper-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    display: none;
+  }
+  .navbar-wrapper-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    color: #a2a4a9;
+  }
+}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./authModal.css";
 import { useAuthHook } from "./authHook";
 
