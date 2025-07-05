@@ -14,7 +14,7 @@
   max-width: 45%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .product-page-wrapper {
     display: flex;
     flex-direction: column;
@@ -23,11 +23,22 @@
     width: 100%;
     padding: 10px;
     overflow: hidden;
+    height: fit-content;
   }
   .product-page-image-section {
     padding: 10px;
+    width: 100%;
+    max-width: 100%;
   }
   .product-page-description-section {
     padding: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-page-wrapper {
+    height: fit-content;
   }
 }

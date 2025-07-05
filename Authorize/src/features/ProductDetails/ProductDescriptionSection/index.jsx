@@ -6,7 +6,8 @@ import "./productDescriptionSection.css";
 import useColorPicker from "./hooks/colorPicker";
 import useSizePicker from "./hooks/sizePicker";
 import { Link } from "react-router-dom";
-export default function () {
+
+export default function ProductDescriptionSection() {
   const product = useGetProduct();
   let [color, colorPickHandler, colorList] = useColorPicker();
   let [size, sizePickHandler, sizeList] = useSizePicker();
@@ -58,22 +59,15 @@ export default function () {
               {colorList.map((colorEl, index) => (
                 <div
                   key={colorEl[0]}
+                  className="color-list-elements-wrapper"
                   style={{
-                    backgroundColor: "transparent",
-                    height: "44px",
-                    width: "78px",
-                    borderRadius: "10px",
-                    cursor: "pointer",
                     border: `1px solid ${colorEl[0]}`,
                   }}
                 >
                   <div
+                    className="color-list-elements-wrapper-child"
                     style={{
                       backgroundColor: colorEl[0],
-                      height: "100%",
-                      width: "100%",
-                      borderRadius: "8px",
-                      transition: "transform 0.2s ease-in-out",
                     }}
                     id={colorEl[0]}
                     onClick={() => colorPickHandler(index, colorEl[0])}
