@@ -6,13 +6,14 @@ import SeperatorLine from "../../components/ui/SeperatorLine";
 import RelatedProducts from "../../features/RelatedProducts";
 import ProductReview from "../../features/ProductReview";
 import PopularThisWeek from "../../features/PopularThisWeek";
+import useScrollToTop from "../../hooks/scrollToTop";
 export default function () {
+  useScrollToTop();
   const { id } = useParams();
   console.log("inside useProductSetter ", id);
   useProductSetter(id);
   return (
     <div className="profile-page-wrapper">
-      <NavigationTracker />
       <ProductDetails />
       <SeperatorLine />
       <RelatedProducts />

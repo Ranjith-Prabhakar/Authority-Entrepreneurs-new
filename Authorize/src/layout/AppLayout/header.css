@@ -1,5 +1,4 @@
 header {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,13 +7,14 @@ header {
   width: 90%;
   margin: auto;
 }
-
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo .logo-image {
-  position: relative;
   width: 90;
   height: 66;
-  top: 23px;
-  left: 120px;
 }
 .header-search-bar-wrapper {
   position: relative;

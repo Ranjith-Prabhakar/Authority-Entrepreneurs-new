@@ -10,6 +10,7 @@
 }
 .navbar-wrapper li {
   list-style: none;
+  cursor: pointer;
 }
 
 .navbar-item-wrapper {

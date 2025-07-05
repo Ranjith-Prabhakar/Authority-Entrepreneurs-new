@@ -14,30 +14,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   cursor: pointer;
 }
 
-.selected-product-categories {
+.selected-product-item-wraper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  opacity: 1;
-  font-family: "Clash Grotesk";
-  font-weight: 300;
+  height: 26px;
+  font-weight: 500;
   font-style: Medium;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0%;
+  vertical-align: bottom;
+  color: #141414;
 }
 
-.selected-product-auth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.selected-product-wrapper-bottom {
+  padding: 25px 0 0;
 }
-.selected-product-wrapper-bottom img {
-  width: 100%;
+.selected-product-icons {
+  transform: scale(1.5);
+  color: #141414;
 }

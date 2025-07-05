@@ -55,18 +55,30 @@ export default function () {
               Color: <span>{color}</span>
             </h5>
             <div className="colorList">
-              {colorList.map((color, index) => (
+              {colorList.map((colorEl, index) => (
                 <div
+                  key={colorEl[0]}
                   style={{
-                    backgroundColor: color[0],
-                    height: "40px",
-                    width: "74px",
-                    borderRadius: "8px",
+                    backgroundColor: "transparent",
+                    height: "44px",
+                    width: "78px",
+                    borderRadius: "10px",
                     cursor: "pointer",
+                    border: `1px solid ${colorEl[0]}`,
                   }}
-                  key={color}
-                  onClick={() => colorPickHandler(index)}
-                ></div>
+                >
+                  <div
+                    style={{
+                      backgroundColor: colorEl[0],
+                      height: "100%",
+                      width: "100%",
+                      borderRadius: "8px",
+                      transition: "transform 0.2s ease-in-out",
+                    }}
+                    id={colorEl[0]}
+                    onClick={() => colorPickHandler(index, colorEl[0])}
+                  ></div>
+                </div>
               ))}
             </div>
           </div>

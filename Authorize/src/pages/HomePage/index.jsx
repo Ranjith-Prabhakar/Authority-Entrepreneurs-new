@@ -2,13 +2,13 @@
 import Card from "../../components/ui/CardGeneral";
 import FilterBar from "../../features/FilterBar";
 import Hero from "../../features/Hero";
-import ProductNavigation from "../../features/ProductNavigationBar";
 import { useGetProducts } from "../../hooks/getProducts";
 import "./homePage.css";
 import SortBar from "../../features/SortBar";
 import Pagination from "../../components/ui/Pagination";
 import { useSetPagination } from "../../hooks/setPagination";
 import { useProductPageNavigation } from "../../hooks/setProductPageNavigation";
+import NavigationTracker from "../../components/ui/NavigationTracker";
 export default function () {
   let products = useGetProducts();
   let [paginationHandler, totalPage, currentTab] = useSetPagination();
@@ -18,16 +18,14 @@ export default function () {
       <Hero />
       <main className="home-page-main">
         <div>
-          <ProductNavigation />
+          <NavigationTracker navigation={["Home"]} />
         </div>
         <div className="home-page-content-wrapper">
           <div className="home-page-content-wrapper-left-section">
             <FilterBar />
           </div>
           <div className="home-page-content-wrapper-right-section">
-            {/* SORTBAR */}
             <SortBar />
-            {/* CARD */}
             <div className="card-wrapper">
               {products ? (
                 products.map((product) => (
