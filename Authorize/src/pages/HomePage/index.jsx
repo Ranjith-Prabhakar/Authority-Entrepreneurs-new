@@ -17,7 +17,7 @@ export default function () {
     <>
       <Hero />
       <main className="home-page-main">
-        <div>
+        <div className="navigation-tracker-wrapper">
           <NavigationTracker navigation={["Home"]} />
         </div>
         <div className="home-page-content-wrapper">

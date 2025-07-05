@@ -54,8 +54,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 120%;
+  padding: 10px;
 }
 
 .sorted-bar-wrapper-right-section h5 span {
   color: #00000066;
+}
+
+@media (max-width: 768px) {
+  .sorted-bar-wrapper-top-section {
+    padding: 10px 10px 0;
+  }
 }
