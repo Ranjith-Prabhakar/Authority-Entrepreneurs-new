@@ -22,3 +22,9 @@
   border: none;
   border-radius: 25px;
 }
+
+@media (max-width: 768px) {
+  .discount-bar {
+    display: none;
+  }
+}

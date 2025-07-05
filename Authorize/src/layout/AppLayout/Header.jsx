@@ -1,9 +1,8 @@
 import logoImage from "../../assets/logo.png";
 import NavBar from "../../components/layout/NavBar";
-// import SearchBar from "../components/layout/SearchBar";
 import SearchBar from "../../features/SearchBar";
 import "./header.css";
-export default function () {
+export default function Header() {
   return (
     <header>
       <div className="logo">

@@ -3,7 +3,7 @@ import DiscountBar from "../../features/DiscountBar";
 import ProductHeader from "./ProductHeader";
 import ProductFooter from "./ProductFooter";
 import "./productPageLayout.css";
-export default function () {
+export default function ProductPageLayout() {
   return (
     <div className="product-page-layout-wrapper">
       <DiscountBar />

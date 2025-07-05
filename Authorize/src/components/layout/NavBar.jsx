@@ -3,7 +3,7 @@ import DownArrowIcon from "../ui/DownArrowIcon";
 import { IoCartOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-export default function () {
+export default function Navbar() {
   return (
     <>
       <ul className="navbar-wrapper">

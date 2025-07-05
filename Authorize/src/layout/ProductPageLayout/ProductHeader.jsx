@@ -12,8 +12,9 @@ import { useState } from "react";
 import { useGetUser } from "../../hooks/getUser";
 import useLogoutUser from "../../hooks/logoutUser";
 import { useNavigate } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function () {
+export default function ProductHeader() {
   const user = useGetUser();
   const logoutHandler = useLogoutUser();
   const product = useGetProduct();
@@ -46,6 +47,11 @@ export default function () {
           </div>
           <CiHeart className="selected-product-icons" />
           <LiaCartPlusSolid className="selected-product-icons" />
+        </div>
+        <div className="selected-product-navigation-flex-mobile">
+          <IoIosSearch />
+          <LiaCartPlusSolid />
+          <RxHamburgerMenu />
         </div>
       </div>
       <div className="selected-product-wrapper-bottom">

@@ -7,10 +7,9 @@ import RelatedProducts from "../../features/RelatedProducts";
 import ProductReview from "../../features/ProductReview";
 import PopularThisWeek from "../../features/PopularThisWeek";
 import useScrollToTop from "../../hooks/scrollToTop";
-export default function () {
+export default function ProductPage() {
   useScrollToTop();
   const { id } = useParams();
-  console.log("inside useProductSetter ", id);
   useProductSetter(id);
   return (
     <div className="profile-page-wrapper">
