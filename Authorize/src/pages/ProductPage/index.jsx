@@ -1,4 +1,3 @@
-import NavigationTracker from "../../components/ui/NavigationTracker";
 import useProductSetter from "../../hooks/setProduct";
 import ProductDetails from "../../features/ProductDetails";
 import { useParams } from "react-router-dom";
@@ -12,7 +11,7 @@ export default function ProductPage() {
   const { id } = useParams();
   useProductSetter(id);
   return (
-    <div className="profile-page-wrapper">
+    <div>
       <ProductDetails />
       <SeperatorLine />
       <RelatedProducts />

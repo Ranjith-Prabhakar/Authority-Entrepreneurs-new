@@ -1,5 +1,6 @@
 .product-page-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -11,4 +12,22 @@
 }
 .product-page-description-section {
   max-width: 45%;
+}
+
+@media (max-width: 768px) {
+  .product-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .product-page-image-section {
+    padding: 10px;
+  }
+  .product-page-description-section {
+    padding: 10px;
+  }
 }
