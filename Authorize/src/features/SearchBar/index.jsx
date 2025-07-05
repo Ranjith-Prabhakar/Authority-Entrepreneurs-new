@@ -31,13 +31,15 @@ export default function () {
             setSearchList(false);
           }}
         >
-          <div className="search-list-layer">
-            <div className="search-list-items-wrapper">
-              {(products || []).map((product) => (
-                <SearchList title={product.title} />
-              ))}
+          {products && products.length > 0 && (
+            <div className="search-list-layer">
+              <div className="search-list-items-wrapper">
+                {(products || []).map((product) => (
+                  <SearchList title={product.title} id={product.id} />
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </div>
