@@ -10,8 +10,8 @@ export default function () {
       <div className="product-page-layout">
         <ProductHeader />
         <Outlet />
-        <ProductFooter />
       </div>
+      <ProductFooter />
     </div>
   );
 }

@@ -1,0 +1,138 @@
+.footer {
+  background: #f2f2f2;
+  padding: 5% 5% 2%;
+  color: #141414;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+.footer-left {
+  width: 500px;
+  height: 160px;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: 2px;
+  width: 170px;
+  height: 32px;
+}
+.newsletter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #333;
+  width: 350px;
+  height: 36px;
+  gap: 16px;
+}
+.newsletter input {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 10px 0;
+  flex: 1;
+  width: 298px;
+  height: 36px;
+  gap: 32px;
+}
+.newsletter button {
+  background: #141414;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 52px;
+  height: 36px;
+}
+.social-icons {
+  display: flex;
+  width: 192px;
+  height: 36px;
+  gap: 24px;
+}
+.social-icons div {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #ffffff;
+}
+
+.social-icons-element {
+  width: 18px;
+  height: 18px;
+}
+.footer-right {
+  display: flex;
+  gap: 200px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-column {
+  height: 162px;
+  gap: 16px;
+}
+.footer-column h4 {
+  margin-bottom: 10px;
+  height: 22px;
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #121212;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  height: 22px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  color: #141414;
+}
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-selects {
+  display: flex;
+  gap: 20px;
+}
+.select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.select img {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+}
