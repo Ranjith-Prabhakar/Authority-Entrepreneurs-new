@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { updateSelectedProduct } from "../store/slices/productSlice";
 import { getSingleProduct } from "../services/products";
+import dummy from "../assets/dummy.json";
 export default function useProductSetter(id) {
   const dispatch = useDispatch();
 
@@ -10,7 +11,8 @@ export default function useProductSetter(id) {
 
     const fetchProduct = async () => {
       try {
-        const data = await getSingleProduct(id);
+        let data = await getSingleProduct(id);
+        data = data ? data : dummy[0];
         console.log("data---", data);
         dispatch(updateSelectedProduct(data));
       } catch (error) {

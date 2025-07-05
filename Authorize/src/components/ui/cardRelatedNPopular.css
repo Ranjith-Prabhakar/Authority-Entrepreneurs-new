@@ -1,13 +1,15 @@
 .related-n-popular-card-wrapper {
-  height: 420px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  height: 450px;
+  box-shadow: 0 0px 0.5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 10px;
 }
 .related-n-popular-card-image {
   padding: 15px;
   width: 255px;
   height: 290px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   object-position: center;
   object-fit: contain;
   background-color: #ffffff;

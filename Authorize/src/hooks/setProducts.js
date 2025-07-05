@@ -7,15 +7,15 @@ import {
   setCategory,
 } from "../store/slices/productSlice";
 import { getProducts } from "../services/products";
-// import dummy from "../assets/dummy.json";
+import dummy from "../assets/dummy.json";
 export default function useProductsSetter() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const data = await getProducts();
-        // const data = dummy;
+        let data = await getProducts();
+        data = data ? data : dummy;
         dispatch(addAllProducts(data));
         dispatch(productsAfterFilterNSort(data));
         dispatch(updatePagination({ lastIndex: 6, tabNo: 1 }));

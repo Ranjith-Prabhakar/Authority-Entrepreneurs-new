@@ -1,5 +1,6 @@
 .related-products-wrapper {
-  margin-top: 100px;
+  margin: 100px 0 0;
+  height: 600px;
 }
 .related-products-header {
   display: flex;
@@ -30,6 +31,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  overflow: hidden;
   gap: 60px;
+  overflow: hidden;
+  height: 100%;
+  padding: 5px;
+  border: none;
 }

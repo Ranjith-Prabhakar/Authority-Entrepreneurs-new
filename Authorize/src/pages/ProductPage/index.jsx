@@ -4,6 +4,7 @@ import ProductDetails from "../../features/ProductDetails";
 import { useParams } from "react-router-dom";
 import SeperatorLine from "../../components/ui/SeperatorLine";
 import RelatedProducts from "../../features/RelatedProducts";
+import ProductReview from "../../features/ProductReview";
 export default function () {
   const { id } = useParams();
   console.log("inside useProductSetter ", id);
@@ -14,7 +15,8 @@ export default function () {
       <ProductDetails />
       <SeperatorLine />
       <RelatedProducts />
-      {/* <ProductReview /> */}
+      <SeperatorLine />
+      <ProductReview />
       {/* <PopularThisWeek /> */}
     </div>
   );
