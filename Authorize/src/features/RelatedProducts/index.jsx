@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CardRelatedNPopular from "../../components/ui/CardRelatedNPopular";
 import "./relatedProducts.css";
 import { useSelector } from "react-redux";
-export default function () {
+export default function RelatedProducts() {
   const products = useSelector((state) => state.products.currentPageProducts);
   return (
     <div className="related-products-wrapper">

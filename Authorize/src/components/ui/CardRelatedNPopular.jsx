@@ -1,7 +1,7 @@
 import "./cardRelatedNPopular.css";
 import RupeeIcon from "./RupeeIcon";
 import { FaStar } from "react-icons/fa";
-export default function ({ product }) {
+export default function CardRelatedNPopular({ product }) {
   return (
     <div className="related-n-popular-card-wrapper ">
       <img

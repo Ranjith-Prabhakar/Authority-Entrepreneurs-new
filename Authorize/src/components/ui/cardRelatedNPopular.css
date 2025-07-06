@@ -13,9 +13,6 @@
   object-position: center;
   object-fit: contain;
   background-color: #ffffff;
-  width: 212;
-  height: 437;
-  opacity: 1;
   gap: 16px;
 }
 
@@ -91,4 +88,33 @@
   font-style: Regular;
   font-size: 16px;
   line-height: 160%;
+}
+
+@media (max-width: 760px) {
+  .related-n-popular-card-wrapper {
+    flex: 0 0 48%;
+    height: fit-content;
+  }
+  .related-n-popular-card-image {
+    width: 100%;
+  }
+
+  .related-n-popular-card-content {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .related-n-popular-card-wrapper {
+    width: 90%;
+  }
+  .related-n-popular-card-image {
+    width: 100%;
+  }
+
+  .related-n-popular-card-content {
+    width: 100%;
+  }
 }

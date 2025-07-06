@@ -1,22 +1,22 @@
-.related-products-wrapper {
+.popular-this-week-wrapper {
   margin: 100px 0 0;
   height: 600px;
 }
-.related-products-header {
+.popular-this-week-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
   height: 34px;
 }
-.related-products-header h3 {
+.popular-this-week-header h3 {
   font-weight: 600;
   font-style: Semibold;
   font-size: 28px;
   line-height: 120%;
   color: #141414;
 }
-.related-products-header .Link {
+.popular-this-week-Link {
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
@@ -27,7 +27,7 @@
   text-decoration-style: solid;
   color: #525252;
 }
-.related-products-card {
+.popular-this-week-card {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -36,4 +36,52 @@
   height: 100%;
   padding: 5px;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .popular-this-week-wrapper {
+    margin: 0;
+    padding: 30px 10px 10px;
+    height: 600px;
+    height: fit-content;
+  }
+  .popular-this-week-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: fit-content;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .popular-this-week-wrapper {
+    margin: 0;
+    padding: 30px 10px 10px;
+    height: 600px;
+    height: fit-content;
+  }
+  .popular-this-week-header {
+    padding: 20px 5px;
+  }
+  .popular-this-week-header h3 {
+    font-weight: 600;
+    font-style: bold;
+    font-size: 23px;
+  }
+  .popular-this-week-Link {
+    font-style: bold;
+    font-size: 14px;
+  }
+  .popular-this-week-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: fit-content;
+    padding: 5px;
+  }
 }

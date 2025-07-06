@@ -40,5 +40,13 @@
 @media (max-width: 768px) {
   .product-page-wrapper {
     height: fit-content;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 460px) {
+  .product-page-wrapper {
+    height: fit-content;
+    margin-bottom: 20px;
   }
 }
