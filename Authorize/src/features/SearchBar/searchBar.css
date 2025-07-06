@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100vw;
+  width: 70vw;
   height: 100vh;
 }
 .search-list-items-wrapper {
@@ -32,10 +32,11 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1);
-  max-width: 470px;
+  max-width: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  /* overflow: scroll; */
+  height: 65vh;
+  overflow-y: scroll;
   cursor: pointer;
 }

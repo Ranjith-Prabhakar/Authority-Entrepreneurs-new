@@ -3,7 +3,7 @@ import SearchIcon from "../../components/ui/SearchIcon";
 import { useSearchProducts } from "../../hooks/useSearchProducts";
 import "./searchBar.css";
 import SearchList from "./SearchList";
-export default function () {
+export default function SearchBar() {
   let [openSearchList, setSearchList] = useState(false);
   let [setValue, products] = useSearchProducts();
   return (
@@ -35,7 +35,11 @@ export default function () {
             <div className="search-list-layer">
               <div className="search-list-items-wrapper">
                 {(products || []).map((product) => (
-                  <SearchList title={product.title} id={product.id} />
+                  <SearchList
+                    image={product.image}
+                    title={product.title}
+                    id={product.id}
+                  />
                 ))}
               </div>
             </div>
