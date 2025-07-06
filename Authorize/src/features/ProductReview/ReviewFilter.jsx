@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./reviewFilter.css";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaStar } from "react-icons/fa";

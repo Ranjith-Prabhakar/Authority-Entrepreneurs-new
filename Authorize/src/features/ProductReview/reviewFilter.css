@@ -90,3 +90,9 @@
   line-height: 160%;
   color: #818b9c;
 }
+
+@media (max-width: 768px) {
+  .filter-box {
+    display: none;
+  }
+}

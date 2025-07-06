@@ -13,6 +13,9 @@
   letter-spacing: -0.2px;
   color: #292929;
 }
+.review-title-mobile {
+  display: none;
+}
 
 .filter-buttons {
   display: flex;
@@ -124,4 +127,131 @@
 }
 .dis-like-btn {
   width: 48px;
+}
+
+@media (max-width: 768px) {
+  .review-title {
+    display: none;
+  }
+  .review-title-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .filter-buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 24px;
+  }
+
+  .filter-btn {
+    padding: 5px 16px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    height: 42px;
+  }
+
+  .filter-btn.active {
+    background: #ebebeb;
+    border: 1px solid #333333;
+  }
+
+  .review-item {
+    padding: 16px 0;
+  }
+
+  .stars {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    display: flex;
+    gap: 4px;
+  }
+  .star {
+    width: 20px;
+    height: 20px;
+    color: #ffa439;
+  }
+  .review-content {
+    font-weight: 600;
+    margin-bottom: 4px;
+    height: 25px;
+    font-style: Semibold;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.2px;
+    color: #141414;
+  }
+
+  .review-date {
+    color: #818b9c;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    height: 26px;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .user-name {
+    font-weight: 500;
+    height: 26px;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0b0f0e;
+  }
+
+  .like-buttons {
+    display: flex;
+    gap: 8px;
+    height: 50px;
+  }
+
+  .like-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #e4e9ee;
+    background: transparent;
+
+    cursor: pointer;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 160%;
+    color: #0b0f0e;
+  }
+  .dis-like-btn {
+    width: 48px;
+  }
 }

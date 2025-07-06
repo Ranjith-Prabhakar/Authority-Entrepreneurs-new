@@ -2,6 +2,7 @@ import "./reviewList.css";
 import { FaStar } from "react-icons/fa";
 import { HiOutlineThumbUp } from "react-icons/hi";
 import { HiOutlineThumbDown } from "react-icons/hi";
+import { CiFilter } from "react-icons/ci";
 const reviews = [
   {
     id: 1,
@@ -45,7 +46,10 @@ export default function ReviewList() {
   return (
     <div className="review-list-section">
       <h3 className="review-title">Review Lists</h3>
-
+      <h3 className="review-title-mobile">
+        Review Lists
+        <CiFilter />
+      </h3>
       <div className="filter-buttons">
         <button className="filter-btn active">All Reviews</button>
         <button className="filter-btn">With Photo & Video</button>
