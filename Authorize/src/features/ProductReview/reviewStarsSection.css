@@ -95,3 +95,33 @@
   font-size: 0.9rem;
   color: #444;
 }
+
+@media (max-width: 768px) {
+  .review-stars-section-review-summary {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .review-stars-section-summary-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .review-stars-section-summary-left-circle {
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+
+  .review-stars-section-summary-right {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+}
