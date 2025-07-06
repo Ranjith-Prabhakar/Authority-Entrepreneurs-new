@@ -43,7 +43,7 @@ export default function Footer() {
               <li>Cart</li>
             </ul>
           </div>
-          <div className="footer-column">
+          <div className="footer-column second-column">
             <h4>Information</h4>
             <ul>
               <li>Shipping Policy</li>
